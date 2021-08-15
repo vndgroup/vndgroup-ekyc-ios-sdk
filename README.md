@@ -2,7 +2,7 @@
 - Camera Preview
 - Liveness
 - Nhận diện mặt trước, mặt sau của 4 loại (Chứng minh nhân dân 9 số, Chứng minh nhân dân 12 số, Căn cước công dân, Căn
-- cước công dân gắn chip)
+- Cước công dân gắn chip)
 - Phát hiện và tự động chụp
 - Align ảnh
 
