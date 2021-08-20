@@ -67,27 +67,32 @@ class FaceDetectorVC: UIViewController {
 }
 
 extension FaceDetectorVC: VNDGEKYCCameraDelegate {
-    ///Người dùng từ chối cấp quyền camera
-    func VNDGEKYCCameraPermissionCameraDenied(status: AVAuthorizationStatus) {
+    func cameraChangePosition(newPosision: AVCaptureDevice.Position) {
         
     }
     
-    func VNDCEKYCCameraDidStart() {
+    func cameraPermissionCameraDenied(status: AVAuthorizationStatus) {
         
     }
     
-    func VNDGEKYCCameraDidFail(error: LocalizedError) {
+    func cameraDidStart() {
         
     }
     
-    func VNDGEKYCCameraChangePosition(newPosision: AVCaptureDevice.Position) {
+    func cameraDidFail(error: Error) {
         
     }
+    
+    func cameraDidStop() {
+        
+    }
+    
+
     
 }
 
 extension FaceDetectorVC: VNDGEKYCFaceDetectorDelegate {
-    func VNDGEKYCFaceDetectionResult(valid: Bool, image: UIImage?) {
+    func faceDetectionResult(valid: Bool, image: UIImage?) {
         DispatchQueue.main.async {
             self.correctView.image = self.correctView.image?.withRenderingMode(.alwaysTemplate)
             self.correctView.tintColor = valid ? UIColor.green : UIColor.red
@@ -98,4 +103,5 @@ extension FaceDetectorVC: VNDGEKYCFaceDetectorDelegate {
         }
     }
     
+
 }

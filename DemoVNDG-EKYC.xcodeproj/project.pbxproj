@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		696BBACD26C909B000B9BECB /* VNDG_EKYC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696BBACB26C9099F00B9BECB /* VNDG_EKYC.framework */; };
-		696BBACE26C909B000B9BECB /* VNDG_EKYC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 696BBACB26C9099F00B9BECB /* VNDG_EKYC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		696F6D1D26CFA35E00CDE936 /* VNDG_EKYC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696F6D1B26CFA35300CDE936 /* VNDG_EKYC.framework */; };
+		696F6D1E26CFA35E00CDE936 /* VNDG_EKYC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 696F6D1B26CFA35300CDE936 /* VNDG_EKYC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		69C1BBCC26C7F4B800EE6019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1BBCB26C7F4B800EE6019 /* AppDelegate.swift */; };
 		69C1BBCE26C7F4B800EE6019 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1BBCD26C7F4B800EE6019 /* SceneDelegate.swift */; };
 		69C1BBD026C7F4B800EE6019 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1BBCF26C7F4B800EE6019 /* ViewController.swift */; };
@@ -29,7 +29,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				696BBACE26C909B000B9BECB /* VNDG_EKYC.framework in Embed Frameworks */,
+				696F6D1E26CFA35E00CDE936 /* VNDG_EKYC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		1D4DF33975B1DF33BEA1C955 /* Pods_DemoVNDG_EKYC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoVNDG_EKYC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2073E2D4BADAC2EB8215D1 /* Pods-DemoVNDG-EKYC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoVNDG-EKYC.release.xcconfig"; path = "Target Support Files/Pods-DemoVNDG-EKYC/Pods-DemoVNDG-EKYC.release.xcconfig"; sourceTree = "<group>"; };
-		696BBACB26C9099F00B9BECB /* VNDG_EKYC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VNDG_EKYC.framework; sourceTree = "<group>"; };
+		696F6D1B26CFA35300CDE936 /* VNDG_EKYC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VNDG_EKYC.framework; sourceTree = "<group>"; };
 		69C1BBC826C7F4B800EE6019 /* DemoVNDG-EKYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DemoVNDG-EKYC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69C1BBCB26C7F4B800EE6019 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69C1BBCD26C7F4B800EE6019 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69C1BBEE26C7F5B100EE6019 /* Pods_DemoVNDG_EKYC.framework in Frameworks */,
-				696BBACD26C909B000B9BECB /* VNDG_EKYC.framework in Frameworks */,
+				696F6D1D26CFA35E00CDE936 /* VNDG_EKYC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +116,7 @@
 		69C1BBE826C7F50A00EE6019 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				696BBACB26C9099F00B9BECB /* VNDG_EKYC.framework */,
+				696F6D1B26CFA35300CDE936 /* VNDG_EKYC.framework */,
 			);
 			path = Framework;
 			sourceTree = "<group>";

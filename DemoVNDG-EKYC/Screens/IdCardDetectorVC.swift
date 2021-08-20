@@ -56,27 +56,31 @@ class IdCardDetectorVC: UIViewController {
 
 extension IdCardDetectorVC: VNDGEKYCCameraDelegate {
     
-    func VNDGEKYCCameraPermissionCameraDenied(status: AVAuthorizationStatus) {
-        
+    func cameraChangePosition(newPosision: AVCaptureDevice.Position) {
+        <#code#>
     }
     
-    func VNDCEKYCCameraDidStart() {
-        
+    func cameraPermissionCameraDenied(status: AVAuthorizationStatus) {
+        <#code#>
     }
     
-    func VNDGEKYCCameraDidFail(error: LocalizedError) {
-        
+    func cameraDidStart() {
+        <#code#>
     }
     
-    func VNDGEKYCCameraChangePosition(newPosision: AVCaptureDevice.Position) {
-        
+    func cameraDidFail(error: Error) {
+        <#code#>
     }
+    
+    func cameraDidStop() {
+        <#code#>
+    }
+    
     
 }
 
 extension IdCardDetectorVC: VNDGEKYCIdCardDetectorDelegate {
-    
-    func VNDGEKYCIdCardDetectionResult(valid: Bool, result: IdCardResult?) {
+    func idCardDetectionResult(valid: Bool, result: IdCardResult?) {
         DispatchQueue.main.async {
             self.correctView.image = self.correctView.image?.withRenderingMode(.alwaysTemplate)
             self.correctView.tintColor = valid ? UIColor.green : UIColor.red
@@ -87,5 +91,7 @@ extension IdCardDetectorVC: VNDGEKYCIdCardDetectorDelegate {
         }
     }
     
+    
+
     
 }
