@@ -57,23 +57,23 @@ class IdCardDetectorVC: UIViewController {
 extension IdCardDetectorVC: VNDGEKYCCameraDelegate {
     
     func cameraChangePosition(newPosision: AVCaptureDevice.Position) {
-        <#code#>
+        
     }
     
     func cameraPermissionCameraDenied(status: AVAuthorizationStatus) {
-        <#code#>
+        
     }
     
     func cameraDidStart() {
-        <#code#>
+        
     }
     
     func cameraDidFail(error: Error) {
-        <#code#>
+        
     }
     
     func cameraDidStop() {
-        <#code#>
+        
     }
     
     
