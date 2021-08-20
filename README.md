@@ -92,19 +92,19 @@ Dữ liệu sẽ được xử lý và trả kết quả thông qua các phươn
 extension FaceDetectorVC: VNDGEKYCCameraDelegate {
   
   ///Người dùng từ chối cấp quyền camera
-  func VNDGEKYCCameraPermissionCameraDenied(status: AVAuthorizationStatus) {
+  func cameraPermissionCameraDenied(status: AVAuthorizationStatus) {
   }
   
   //Camera khởi tạo thành công
-  func VNDCEKYCCameraDidStart() {
+  func cameraDidStart() {
   }
 
   /// Camera session khởi tạo thất bại
-  func VNDGEKYCCameraDidFail(error: LocalizedError) {
+  func cameraDidFail(error: LocalizedError) {
   }
 
   /// Camera thay đổi
-  func VNDGEKYCCameraChangePosition(newPosision: AVCaptureDevice.Position) {
+  func cameraChangePosition(newPosision: AVCaptureDevice.Position) {
   }
 }
 ```
@@ -112,7 +112,7 @@ extension FaceDetectorVC: VNDGEKYCCameraDelegate {
 extension FaceDetectorVC: VNDGEKYCFaceDetectorDelegate {
   /// Kết quả trả về: valid trả về kết quả có đang nhận diện được khuôn mặt và 
   /// đạt đủ điều kiện nhìn thẳng và không nghiên đầu
-  func VNDGEKYCFaceDetectionResult(valid: Bool, image: UIImage?) {
+  func faceDetectionResult(valid: Bool, image: UIImage?) {
     // Phương thức này sẽ vẫn được gọi mỗi lần nhận được được khuôn mặt
     // Hãy gắn flag đánh dấu khi nhận được ảnh để tạm dừng không chạy block này tùy theo cách dùng
     DispatchQueue.main.async {
@@ -182,7 +182,7 @@ class IdCardDetectorVC: UIViewController {
 Dữ liệu sẽ được xử lý và trả kết quả thông qua các phương thức
 ```
 extension IdCardDetectorVC: VNDGEKYCIdCardDetectorDelegate {
-  func VNDGEKYCIdCardDetectionResult(valid: Bool, result: IdCardResult?) {
+  func idCardDetectionResult(valid: Bool, result: IdCardResult?) {
     // Phương thức này sẽ vẫn được gọi mỗi lần nhận được được ID Card
     // Hãy gắn flag đánh dấu khi nhận được ảnh để tạm dừng không chạy block này tùy theo cách dùng
     DispatchQueue.main.async {
